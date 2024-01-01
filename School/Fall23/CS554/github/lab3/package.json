@@ -1,0 +1,21 @@
+{
+  "name": "cs-554-lab-3",
+  "version": "1.0.0",
+  "description": "This is lab3 for CS554",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "seed": "node ./tasks/seed.js"
+  },
+  "author": "Spruha Paradkar 10470967",
+  "license": "ISC",
+  "dependencies": {
+    "@apollo/server": "^4.9.3",
+    "graphql": "^16.8.1",
+    "mongodb": "^6.1.0",
+    "redis": "^4.6.10",
+    "uuid": "^9.0.1"
+  }
+}

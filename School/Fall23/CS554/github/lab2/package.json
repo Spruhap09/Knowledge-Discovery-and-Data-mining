@@ -1,0 +1,21 @@
+{
+  "name": "cs-554-lab-2",
+  "version": "1.0.0",
+  "description": "This is lab2 for cs554",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "Spruha Paradkar 10470967",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.5.0",
+    "blueimp-md5": "^2.19.0",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "flat": "^6.0.1",
+    "redis": "^4.6.9"
+  },
+  "type": "module"
+}

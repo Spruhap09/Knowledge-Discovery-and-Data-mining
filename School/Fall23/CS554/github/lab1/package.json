@@ -1,0 +1,22 @@
+{
+  "name": "cs-554-lab-1",
+  "version": "1.0.0",
+  "description": "This is lab 1 for cs 554",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "Spruha Paradkar 10470967",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
+    "express": "^4.18.2",
+    "express-handlebars": "^7.1.2",
+    "express-session": "^1.17.3",
+    "mongodb": "^6.0.0"
+  },
+  "type": "module"
+}
