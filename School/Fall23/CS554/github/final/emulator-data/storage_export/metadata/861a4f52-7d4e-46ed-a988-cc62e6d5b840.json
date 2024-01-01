@@ -1,0 +1,19 @@
+{
+  "name": "profile_pictures/aGiVZMpGF3dZxcTXHeuR0x38tDHf/profile_pic",
+  "bucket": "cs554-final-project-8094e.appspot.com",
+  "metageneration": 1,
+  "generation": 1703168555881,
+  "contentType": "image/jpeg",
+  "storageClass": "STANDARD",
+  "contentDisposition": "inline",
+  "downloadTokens": [
+    "890b2671-4c0d-41ce-b72e-ac24931c4fb8"
+  ],
+  "etag": "e3I8enUmd8FfTO42sANDF4sDyKA",
+  "customMetadata": {},
+  "timeCreated": "2023-12-21T14:22:35.881Z",
+  "updated": "2023-12-21T14:22:35.881Z",
+  "size": 70017,
+  "md5Hash": "1oMGsPH8cpeTZX/KdBsmPQ==",
+  "crc32c": "2645697976"
+}

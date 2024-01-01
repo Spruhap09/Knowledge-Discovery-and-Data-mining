@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+  .primary {
+    @apply w-full h-full m-0 p-10 flex flex-col justify-center items-center overflow-scroll;
+  }
+  .tool-primary {
+    @apply w-full h-auto flex flex-col justify-center items-center m-3;
+  }
+  .dial-content {
+    @apply rounded-full p-2 bg-white border-2 border-white shadow-xl shadow-black/10 flex justify-center items-center;
+  }
+  .tool-button {
+    @apply rounded-full w-5 h-5 m-0 p-0 flex justify-center;
+  }
+  .tool-icon {
+    @apply w-5 h-5 transition-transform group-hover:rotate-45;
+  }
+
+  .btn{
+    @apply h-7 hover:scale-125 cursor-pointer transition-all duration-150 ease-out;
+  }
+
+  body.dark-mode {
+    @apply bg-gray-600 text-white;
+  }
+
+}

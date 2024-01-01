@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": false,
+    "esModuleInterop": true,
+    "outDir": "dist",
+    // "rootDir": "src/firebase",
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  // "_moduleAliases": {
+  //   "@": "dist/src"
+  // },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/firebase/*.ts"],
+  "exclude": ["node_modules"]
+}
