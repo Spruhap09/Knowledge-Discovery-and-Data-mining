@@ -1,0 +1,94 @@
+#################################################
+#  Company    : Stevens Institute of Technology
+#  Project    : HW02
+#  Purpose    : To perform the EDA analysis given the database called breast-cancer-wisconsin.data.csv
+#  First Name : Spruha
+#  Last Name  : Paradkar
+#  Id		  : 10470967
+#  Date       : 10/09/2023
+#  Comments   : I pledge my honor that I have abided by the Stevens Honor System
+#################################################
+```{r}
+breastCancer <- read.csv("/Users/spruhap/Downloads/breast-cancer-wisconsin.csv")
+print("Summary of F1")
+summary(breastCancer$F1)
+```
+
+
+```{r}
+print("Summary of F2")
+summary(breastCancer$F2)
+```
+```{r}
+print("Summary of F3")
+summary(breastCancer$F3)
+```
+```{r}
+print("Summary of F4")
+summary(breastCancer$F4)
+```
+```{r}
+print("Summary of F5")
+summary(breastCancer$F5)
+```
+
+
+```{r}
+print("Summary of F7")
+summary(breastCancer$F7)
+```
+```{r}
+print("Summary of F8")
+summary(breastCancer$F8)
+```
+```{r}
+print("Summary of F9")
+summary(breastCancer$F9)
+```
+```{r}
+print("The missing values")
+breastCancer[breastCancer$F6 == '?',]
+```
+```{r}
+breastCancer3 <- subset(breastCancer, F6 != '?')
+mean_value <- mean(as.integer(breastCancer3$F6))
+print("the mean value")
+print(mean_value)
+breastCancer$F6[breastCancer$F6 == '?'] <- mean_value
+breastCancer$F6 <- as.numeric(breastCancer$F6)
+print("Summary of F6")
+print(summary(breastCancer$F6))
+```
+```{r}
+breastCancer$F6 <- as.integer(breastCancer$F6)
+frequencyTable <- table(breastCancer$Class, breastCancer$F6)
+print('Displaying the frequency table of Class vs. F6')
+print("")
+print(frequencyTable)
+```
+```{r}
+# Load the ggplot2 library
+breastCancer4 <- subset(breastCancer, select = -c(Class, Sample, F7, F8, F9))
+pairs(breastCancer4)
+```
+
+```{r}
+print("The histograms of F7,F8,F9")
+hist(breastCancer$F7)
+hist(breastCancer$F8)
+hist(breastCancer$F9)
+```
+
+
+```{r}
+print("The histograms of F7,F8,F9")
+boxplot(breastCancer$F7)
+boxplot(breastCancer$F8)
+boxplot(breastCancer$F9)
+```
+```{r}
+rm(list = ls())
+breastCancer3 <- read.csv("/Users/spruhap/Downloads/breast-cancer-wisconsin.csv")
+breastCancer5 <- subset(breastCancer3, breastCancer3$F6 != '?')
+breastCancer5
+```
